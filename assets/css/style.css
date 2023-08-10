@@ -1,0 +1,123 @@
+@import "./reset.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #5947ca;
+  font-family: "Kanit", sans-serif;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  height: 100%;
+}
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 24px;
+}
+
+/* +++++++++++++++Header++++++++++++ */
+/* +++++++++++++++Header++++++++++++ */
+/* +++++++++++++++Header++++++++++++ */
+header {
+  /* border: 1px red solid; */
+  height: 80px;
+  background-color: white;
+}
+header img {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+header nav {
+  /* border: 1px solid green; */
+  display: flex;
+  gap: 10px;
+}
+header .container {
+  /* border: 1px red solid; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container nav {
+  /* border: 1px green solid; */
+  display: flex;
+  align-items: center;
+}
+header :is(a, button) {
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+header a:hover {
+  background-color: #dcd8d8;
+}
+header button {
+  color: white;
+  background-color: black;
+  /* Prendra la valeur du parent pour ces propriétés */
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* +++++++++++++++Main++++++++++++ */
+/* +++++++++++++++Main++++++++++++ */
+/* +++++++++++++++Main++++++++++++ */
+main .container {
+  background-color: white;
+}
+#main-section {
+  margin-top: 60px;
+  /* border: 1px red solid; */
+  height: 300px;
+  padding: 10px 10px;
+  gap: 10px;
+  display: flex;
+}
+#main-section div {
+  flex: 1;
+}
+
+#main-section div:last-child {
+  border: 1px red solid;
+  /* padding: 150px 20px 0px 20px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; Ne marche pas */
+}
+#main-section img {
+  height: 100%;
+  width: 100%;
+}
+#main-section p {
+  margin-top: 20px;
+  height: 100%;
+}
+
+/* +++++++++++++++Footer++++++++++++ */
+/* +++++++++++++++Footer++++++++++++ */
+/* +++++++++++++++Footer++++++++++++ */
+footer .container {
+  display: flex;
+}
+footer div {
+  margin-top: 100px;
+  justify-content: flex-end;
+  color: white;
+}
